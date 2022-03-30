@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(66, 65, 65);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.avatar{
+    border-radius: 100px;
+}
+
+.h3{
+    font-family: 'Lobster', cursive;
+}
+.h4{
+  font-family: 'Lobster', cursive;
+}
+
+.button{
+    margin-bottom: 20px;
+    background-color: rgb(253, 250, 250);
+    border: 0;
+    width: 300px;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    font-family: 'Roboto Condensed', cursive;
+    font-size: 15px;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    box-shadow: -5px 1px 23px -2px rgba(0,0,0,1);
+    -webkit-box-shadow: -5px 1px 23px -2px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 1px 23px -2px rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.button:hover{
+    color: rgb(212, 44, 44);
+    background-color: rgb(148, 206, 137);
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
+  .audio_volume_only {
+    width: 10;
+    
+  }
